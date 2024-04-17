@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atalhos do teclado</title>
+  
+<body>
+<header>
+<h1>Minha Página</h1>
+<nav class="right-align">
+    <ul>
+      <li><a href="https://olhardigital.com.br/#google_vignette">Home</a></li>
+      <li><a href="https://olhardigital.com.br/fale-conosco/">Contato</a></li>
+      <li><a href="https://olhardigital.com.br/sobre-nos/">Sobre</a></li>
+    </ul>
+</header>
+</header>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #08a7f1;
+      color: #000000;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between; /* Alinha os elementos à esquerda e à direita */
+      align-items: center; /* Alinha os elementos verticalmente */
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      text-align: center;
+    }
+
+    nav ul li a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #08a7f1;
+      color: #000000;
+      padding: 10px 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    /* Estilos para alinhar a navegação à direita */
+    .right-align {
+      margin-left: auto; /* Empurra a navegação para a direita */
+    }
+  </style>
+<div id="corpo">
+<p>
+Atalhos utilizados na página:
+CTRL + b serve para acessar o link Sobre da página;
+CTRL + i serve para acessar o link da imagem da página;
+CTRL + m serve para acessar o bloco de mensagem da página.
+</p>
+<a href="https://via.placeholder.com/400" target="_blank">
+<img src="https://www.conjur.com.br/img/b/emoji-joinha.jpeg" alt="Imagem Placeholder" width="400" height="400">
+</a>
+<p></p>
+<div id="mensagem-form">
+    <input type="text" id="mensagem-input" placeholder="Digite sua mensagem">
+    <button id="enviar-btn">Enviar</button>
+</div>
+<script>
+    // Adicionar atalhos de teclado
+    document.addEventListener("keydown", function(event) {
+     if (event.ctrlKey && event.key === "b") {
+    window.location.href = "https://olhardigital.com.br/sobre-nos/";
+    }
+    if (event.ctrlKey && event.key === "i") {
+    window.open("https://www.conjur.com.br/img/b/emoji-joinha.jpeg");
+    }
+    if (event.ctrlKey && event.key === "m") {
+    document.getElementById("mensagem-input").focus();
+    }
+    });
+</script>
+<footer>
+    <p>© 2024 - Site de Atalhos do teclado - Desenvolvido por Ana Nicolly Medeiros</p>
+  </footer>
+</body>
+</head>
+</html>
